@@ -1,7 +1,7 @@
 import { AppContainer } from "react-hot-loader";
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "../../components/App";
+import GolendCarsApp from "../../components/apps/golendCarsApp";
 
 import "./index.css";
 
@@ -13,5 +13,8 @@ const render = Component =>
     document.getElementById("root")
   );
 
-render(App);
-if (module.hot) module.hot.accept("../../components/App", () => render(App));
+render(GolendCarsApp);
+if (module.hot)
+  module.hot.accept("../../components/apps/golendCarsApp", () =>
+    render(GolendCarsApp)
+  );

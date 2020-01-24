@@ -1,21 +1,21 @@
 import React from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import Loadable from "react-loadable";
-import Loader from "./Loader";
+import Loader from "../Loader";
 
 const LoadableHome = Loadable({
-  loader: () => import("./Home"),
+  loader: () => import("../Home"),
   loading: Loader,
   delay: 300
 });
 
 const LoadableDynamicPage = Loadable({
-  loader: () => import("./DynamicPage"),
+  loader: () => import("../DynamicPage"),
   loading: Loader,
   delay: 300
 });
 
-const App = () => {
+const GolendCarsApp = props => {
   return (
     <Router>
       <div>
@@ -29,4 +29,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default GolendCarsApp;
