@@ -1,7 +1,5 @@
 const paths = require("./settings/paths");
-
 const webpack = require("webpack");
-
 const port = process.env.PORT || 3000;
 
 module.exports = (env, app) => {

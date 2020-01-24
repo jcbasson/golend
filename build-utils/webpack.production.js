@@ -1,7 +1,11 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const paths = require("./settings/paths");
 
-module.exports = () => ({
+module.exports = (env, app) => ({
   mode: "production",
+  entry: {
+    app: `${paths.appEntry}/${app}/index.js`
+  },
   output: {
     filename: "bundle.js"
   },
