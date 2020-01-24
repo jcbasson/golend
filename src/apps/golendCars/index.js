@@ -1,26 +1,21 @@
 import { AppContainer } from "react-hot-loader";
 import React from "react";
 import ReactDOM from "react-dom";
-import GolendCarsApp from "../../components/apps/golendCarsApp";
-import { getRoutes } from "./routeConfig";
+import Root from "./root";
 
 import "./index.css";
 
-const props = {
-  routes: getRoutes()
-};
-
-const render = (Component, props) =>
+const render = Component =>
   ReactDOM.render(
     <AppContainer>
-      <Component {...props} />
+      <Component />
     </AppContainer>,
     document.getElementById("root")
   );
 
-const hotModuleCallbackFn = props => () => render(GolendCarsApp, props);
+const hotModuleCallbackFn = props => () => render(Root);
 
-render(GolendCarsApp, props);
+render(Root);
 if (module.hot)
   module.hot.accept(
     "../../components/apps/golendCarsApp",

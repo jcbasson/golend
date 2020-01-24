@@ -1,7 +1,7 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const paths = require("./settings/paths");
 
-module.exports = (env, app) => ({
+module.exports = (env, appEntry) => ({
   mode: "production",
   entry: {
     app: `${paths.appEntry}/${app}/index.js`
