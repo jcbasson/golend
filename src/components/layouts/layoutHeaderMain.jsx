@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import GolendNavigation from "../navigation/golendNavigation";
 
-const Layout2piece = ({ children }) => {
+const LayoutHeaderMain = ({ children }) => {
   return (
     <Layout>
       <LayoutHeaderPlaceholder>
@@ -29,7 +29,6 @@ const Layout = styled.div`
 const LayoutHeaderPlaceholder = styled.header`
   width: 100%;
   height: 70px;
-  border-bottom: 1px solid black;
   padding: 5px;
 `;
 
@@ -39,4 +38,4 @@ const LayoutMainContentPlaceHolder = styled.main`
   border: 1px solid black;
 `;
 
-export default Layout2piece;
+export default LayoutHeaderMain;
