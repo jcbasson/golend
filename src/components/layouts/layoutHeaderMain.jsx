@@ -36,6 +36,8 @@ const LayoutMainContentPlaceHolder = styled.main`
   width: 81%;
   height: 100%;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 `;
 
 export default LayoutHeaderMain;
