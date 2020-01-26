@@ -1,10 +1,10 @@
 import React from "react";
-import { render, fireEvent } from "@testing-library/react";
-import GolendCarRoutes from "../golendCarRoutes";
+import { render } from "@testing-library/react";
+import SwitchRoutes from "../switchRoutes";
 import { createMemoryHistory } from "history";
-import { Link, Route, Router, Switch, MemoryRouter } from "react-router-dom";
+import { Router } from "react-router-dom";
 
-describe("components/apps/golendCarRoutes", () => {
+describe("components/routes/SwitchRoutes", () => {
   const vehiclesComponent = () => {
     return (
       <>
@@ -34,7 +34,7 @@ describe("components/apps/golendCarRoutes", () => {
     history.push("/vehicles");
     const { container } = render(
       <Router history={history}>
-        <GolendCarRoutes {...props} />
+        <SwitchRoutes {...props} />
       </Router>
     );
 

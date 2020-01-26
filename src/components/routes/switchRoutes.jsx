@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import isEmpty from "lodash/isEmpty";
 import isNil from "lodash/isNil";
 
-const GolendCarRoutes = ({ routes = [] }) => {
+const SwitchRoutes = ({ routes = [] }) => {
   return (
     <Switch>
       {!isEmpty(routes) &&
@@ -21,4 +21,4 @@ const GolendCarRoutes = ({ routes = [] }) => {
   );
 };
 
-export default GolendCarRoutes;
+export default SwitchRoutes;
