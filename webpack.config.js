@@ -19,6 +19,10 @@ module.exports = ({ mode, presets, app }) => {
             use: {
               loader: "babel-loader"
             }
+          },
+          {
+            test: /\.(gif|png|jpe?g|svg)$/i,
+            use: ["file-loader", "image-webpack-loader"]
           }
         ]
       },

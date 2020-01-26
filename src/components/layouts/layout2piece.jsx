@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import GolendNavigation from "../navigation/golendNavigation";
 
 const Layout2piece = ({ children }) => {
   return (
     <Layout>
-      <LayoutHeaderPlaceholder></LayoutHeaderPlaceholder>
+      <LayoutHeaderPlaceholder>
+        <GolendNavigation></GolendNavigation>
+      </LayoutHeaderPlaceholder>
       <LayoutMainContentPlaceHolder>{children}</LayoutMainContentPlaceHolder>
     </Layout>
   );
@@ -25,8 +28,9 @@ const Layout = styled.div`
 
 const LayoutHeaderPlaceholder = styled.header`
   width: 100%;
-  height: 100px;
+  height: 70px;
   border-bottom: 1px solid black;
+  padding: 5px;
 `;
 
 const LayoutMainContentPlaceHolder = styled.main`
