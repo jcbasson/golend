@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import GolendNavigation from "../navigation/golendNavigation";
+import Navigation from "../navigation";
 
 const LayoutHeaderMain = ({ children }) => {
   return (
     <Layout>
       <LayoutHeaderPlaceholder>
-        <GolendNavigation></GolendNavigation>
+        <Navigation></Navigation>
       </LayoutHeaderPlaceholder>
       <LayoutMainContentPlaceHolder>{children}</LayoutMainContentPlaceHolder>
     </Layout>
