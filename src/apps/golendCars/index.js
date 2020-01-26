@@ -2,13 +2,17 @@ import { AppContainer } from "react-hot-loader";
 import React from "react";
 import ReactDOM from "react-dom";
 import Root from "./root";
-import "../../fonts";
+import { ThemeProvider } from "styled-components";
+import GolendTheme from "../../themes/golend";
+
 import "./reset.css";
 
 const render = Component =>
   ReactDOM.render(
     <AppContainer>
-      <Component />
+      <ThemeProvider theme={GolendTheme}>
+        <Component />
+      </ThemeProvider>
     </AppContainer>,
     document.getElementById("root")
   );
