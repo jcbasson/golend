@@ -8,7 +8,6 @@ const paths = require("./build-utils/settings/paths");
 const LodashPlugin = require("lodash-webpack-plugin");
 
 module.exports = ({ mode, presets, app }) => {
-  console.log("app = ", app);
   return webpackMerge(
     {
       module: {
@@ -31,7 +30,8 @@ module.exports = ({ mode, presets, app }) => {
       },
       output: {
         filename: "bundle.js",
-        chunkFilename: "[name].lazy-chunk.js"
+        chunkFilename: "[name].[chunkhash].js",
+        publicPath: "/"
       },
       plugins: [
         new HtmlWebpackPlugin({

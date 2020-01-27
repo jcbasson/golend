@@ -2,8 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { useLQIPImage } from "./hooks";
 
-const UserProfilePic = ({ lowQualityImgSrc, highQualityImgSrc }) => {
-  const [src] = useLQIPImage(lowQualityImgSrc, highQualityImgSrc);
+const UserProfilePic = ({
+  lowQualityProfilePicSrc,
+  highQualityProfilePicSrc
+}) => {
+  const [src] = useLQIPImage(lowQualityProfilePicSrc, highQualityProfilePicSrc);
   return (
     <UserProfilePicContainer>
       <DividerLines></DividerLines>
