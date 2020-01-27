@@ -10,7 +10,7 @@ const VehicleContainer = styled.div`
   height: 170px;
   width: 100%;
   border: 1px solid ${({ theme }) => theme.colors.secondary};
-  border-radius: 4px;
+  border-radius: 10px;
   margin-bottom: 20px;
   padding: 20px;
   align-items: center;
