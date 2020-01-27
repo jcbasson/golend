@@ -1,7 +1,8 @@
 {
     "vehicles": {
         "list": {
-            "sectionTitle": "Let's find your car"
+            "sectionTitle": "Let's find your car",
+            "fetchUrl": "http://localhost:3000"
         },
         "years": {
             "startYear": "2020",

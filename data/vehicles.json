@@ -1,0 +1,168 @@
+{
+    "2020": {
+        "2020randomCar": {
+            "id": "2020randomCar",
+            "model": "Random Car",
+            "series": "Sport",
+            "variant": "Some random very good looking car",
+            "new_price": 30090,
+            "from": 614
+        },
+        "2020ford": {
+            "id": "2020ford",
+            "model": "Ford",
+            "series": "economy",
+            "variant": "Economic Ford city slicker car",
+            "new_price": 870,
+            "from": 550
+        },
+        "2020mercedes": {
+            "id": "2020mercedes",
+            "model": "Mercedes",
+            "series": "C",
+            "variant": "Mercedes C series",
+            "new_price": 15000,
+            "from": 10000
+        },
+        "2020jeep": {
+            "id": "2020jeep",
+            "model": "Jeep",
+            "series": "Climber",
+            "variant": "Jeep outback climber",
+            "new_price": 20000,
+            "from": 1350
+        },
+        "2020landrover": {
+            "id": "2020landrover",
+            "model": "Land Rover",
+            "series": "Climber",
+            "variant": "Jeep outback climber",
+            "new_price": 20000,
+            "from": 1350
+        },
+        "2020JCMobile": {
+            "id": "2020JCMobile",
+            "model": "JC Mobile",
+            "series": "Elegance",
+            "variant": "JC Mobile elegance series",
+            "new_price": 1000000,
+            "from": 900000
+        },
+        "2020bmwBlue": {
+            "id": "2020bmwBlue",
+            "model": "BMW Blue",
+            "series": "M",
+            "variant": "BMW M series I think",
+            "new_price": 34600,
+            "from": 400
+        },
+        "2020ferrari": {
+            "id": "2020ferrari",
+            "model": "Ferrari",
+            "series": "Sport",
+            "variant": "Ferrari too hot to handle",
+            "new_price": 1000000,
+            "from": 900000
+        },
+        "2020audi": {
+            "id": "2020audi",
+            "model": "Audi",
+            "series": "Black Steel",
+            "variant": "Audi black steel series",
+            "new_price": 970,
+            "from": 970
+        },
+        "2020alphaRomeo": {
+            "id": "2020alphaRomeo",
+            "model": "alphaRomeo",
+            "series": "Sport",
+            "variant": "Not ferrari series",
+            "new_price": 850,
+            "from": 20
+        },
+        "2020bmw": {
+            "id": "2020bmw",
+            "model": "BMW",
+            "series": "White Series",
+            "variant": "",
+            "new_price": 580,
+            "from": 330
+        }
+    },
+    "2014": {
+        "2014bmwBlue": {
+            "id": "2014bmwBlue",
+            "model": "BMW Blue",
+            "series": "M",
+            "variant": "BMW M series I think",
+            "new_price": 34600,
+            "from": 400
+        },
+        "2014ferrari": {
+            "id": "2014ferrari",
+            "model": "Ferrari",
+            "series": "Sport",
+            "variant": "Ferrari too hot to handle",
+            "new_price": 1000000,
+            "from": 900000
+        },
+        "2014audi": {
+            "id": "2014audi",
+            "model": "Audi",
+            "series": "Black Steel",
+            "variant": "Audi black steel series",
+            "new_price": 970,
+            "from": 970
+        },
+        "2014alphaRomeo": {
+            "id": "2014alphaRomeo",
+            "model": "alphaRomeo",
+            "series": "Sport",
+            "variant": "Not ferrari series",
+            "new_price": 850,
+            "from": 20
+        },
+        "2014bmw": {
+            "id": "2014bmw",
+            "model": "BMW",
+            "series": "White Series",
+            "variant": "",
+            "new_price": 580,
+            "from": 330
+        }
+    },
+    "2010": {
+        "2010randomCar": {
+            "id": "2010randomCar",
+            "model": "Random Car",
+            "series": "Sport",
+            "variant": "Some random very good looking car",
+            "new_price": 30090,
+            "from": 614
+        },
+        "2010ford": {
+            "id": "2010ford",
+            "model": "Ford",
+            "series": "economy",
+            "variant": "Economic Ford city slicker car",
+            "new_price": 870,
+            "from": 550
+        },
+        "2010mercedes": {
+            "id": "2010mercedes",
+            "model": "Mercedes",
+            "series": "C",
+            "variant": "Mercedes C series",
+            "new_price": 15000,
+            "from": 10000
+        },
+        "2010jeep": {
+            "id": "2010jeep",
+            "model": "Jeep",
+            "series": "Climber",
+            "variant": "Jeep outback climber",
+            "new_price": 20000,
+            "from": 1350
+        }
+    }
+}

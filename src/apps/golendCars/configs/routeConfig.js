@@ -31,9 +31,9 @@ const LoadableVehicles = Loadable.Map({
   },
   loading: Loader,
   delay: 300,
-  render(loaded) {
+  render(loaded, routerProps) {
     const Vehicles = loaded.Vehicles.default;
-    const props = loaded.config.vehicles.list;
+    const props = { ...loaded.config.vehicles.list, ...routerProps };
 
     return <Vehicles {...props} />;
   }

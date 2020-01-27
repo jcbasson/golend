@@ -40,7 +40,10 @@ module.exports = ({ mode, presets, app }) => {
         }),
 
         new webpack.ProgressPlugin(),
-        new LodashPlugin()
+        new LodashPlugin({
+          collections: true,
+          paths: true
+        })
       ]
     },
     modeConfig(mode, app),
