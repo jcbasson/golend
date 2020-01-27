@@ -1,0 +1,19 @@
+{
+    "imagesCDN": {
+        "vehiclePath": "v1580093882/golend/vehicles",
+        "vehicleImgFormat": "jpg"
+    },
+    "callUs": {
+        "telephoneNumber": 1300,
+        "companyName": "Golend"
+    },
+    "userProfile": {},
+    "vehicles": {
+        "list": {
+            "sectionTitle": "Let's find your car",
+            "fetchUrl": "http://localhost:3000",
+            "currency": "$"
+        },
+        "years": {}
+    }
+}

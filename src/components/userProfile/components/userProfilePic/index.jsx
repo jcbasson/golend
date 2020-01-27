@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { useLQIPImage } from "./hooks";
+import { useLQIPImage } from "../../../../hooks/imageHooks";
+import config from "./config.json";
 
-const UserProfilePic = ({
-  lowQualityProfilePicSrc,
-  highQualityProfilePicSrc
-}) => {
+const UserProfilePic = () => {
+  const { lowQualityProfilePicSrc, highQualityProfilePicSrc } = config;
   const [src] = useLQIPImage(lowQualityProfilePicSrc, highQualityProfilePicSrc);
   return (
     <UserProfilePicContainer>

@@ -1,18 +1,16 @@
 import React from "react";
-import { getRoutes } from "./configs/routeConfig";
-import userProfileConfig from "./configs/userProfile.json";
+import { getRoutes } from "./routeConfig";
 import { BrowserRouter as Router } from "react-router-dom";
 import SwitchRoutes from "../../components/routes/switchRoutes";
 import LayoutHeaderMain from "../../components/ui/layouts/layoutHeaderMain";
 import GolendTheme from "../../components/themes/golend";
 import UserProfilePic from "../../components/userProfile/components/userProfilePic";
 
-//TODO: Move these props to state and UserProfilePic component would fetch the user data from the server
 const Root = () => (
   <Router>
     <GolendTheme>
       <LayoutHeaderMain>
-        <UserProfilePic {...userProfileConfig}></UserProfilePic>
+        <UserProfilePic></UserProfilePic>
         <SwitchRoutes routes={getRoutes()} />
       </LayoutHeaderMain>
     </GolendTheme>

@@ -4,20 +4,13 @@ import isNil from "lodash/isNil";
 import get from "lodash/get";
 import { useFetchVehicles } from "./hooks";
 import Vehicle from "./components/vehicle";
+import VehiclePicture from "./components/vehiclePicture";
 
-const Vehicles = ({
-  sectionTitle,
-  year,
-  match,
-  fetchUrl,
-  cdnUrl,
-  currency
-}) => {
+const Vehicles = ({ sectionTitle, year, match, fetchUrl }) => {
   //Done so we can use this component without router if we want
   const vehiclesYear = isNil(get(match, "params.year"))
     ? year
     : get(match, "params.year");
-  console.log("fetchUrl", fetchUrl);
   const [vehicles] = useFetchVehicles(fetchUrl, vehiclesYear);
 
   return (
@@ -25,12 +18,9 @@ const Vehicles = ({
       <SectionTitle>{sectionTitle}</SectionTitle>
       {!isNil(vehicles) &&
         Object.values(vehicles).map(vehicle => (
-          <Vehicle
-            {...vehicle}
-            year={vehiclesYear}
-            cdnUrl={cdnUrl}
-            currency={currency}
-          />
+          <Vehicle>
+            <VehiclePicture year={vehiclesYear} name={vehicle.name} />
+          </Vehicle>
         ))}
     </>
   );

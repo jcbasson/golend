@@ -2,11 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import TelephoneIcon from "../icons/telephoneIcon";
 
-const CallUsButton = ({ telephoneNumber }) => {
+const CallUsButton = ({ telephoneNumber, companyName }) => {
   return (
     <CallUsButtonContainer>
       <TelephoneIcon></TelephoneIcon>
-      <CallUsText>{telephoneNumber} Golend</CallUsText>
+      <CallUsText>
+        {telephoneNumber} {companyName}
+      </CallUsText>
     </CallUsButtonContainer>
   );
 };

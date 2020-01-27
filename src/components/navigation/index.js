@@ -1,19 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import GolendLogo from "../logos/golend";
-import CallUsButton from "../buttons/callUsButton";
-import MenuButton from "../buttons/menuButton";
+import CompanyLogo from "../companyLogo";
+import CallUsButton from "../ui/buttons/callUsButton";
+import MenuButton from "../ui/buttons/menuButton";
+import config from "./config.json";
 
-//TODO: Make telephoneNumber and link "to" come from a config
-const GolendNavigation = ({}) => {
+const Navigation = () => {
+  const { homeRoute, telephoneNumber, companyName } = config;
   return (
     <NavigationContainer>
-      <Link to="/vehicles">
-        <GolendLogo></GolendLogo>
+      <Link to={homeRoute}>
+        <CompanyLogo></CompanyLogo>
       </Link>
       <NavigationButtons>
-        <CallUsButton telephoneNumber={1300}></CallUsButton>
+        <CallUsButton
+          telephoneNumber={telephoneNumber}
+          companyName={companyName}
+        ></CallUsButton>
         <MenuButton></MenuButton>
       </NavigationButtons>
     </NavigationContainer>
@@ -38,4 +42,4 @@ const NavigationButtons = styled.div`
   }
 `;
 
-export default GolendNavigation;
+export default Navigation;

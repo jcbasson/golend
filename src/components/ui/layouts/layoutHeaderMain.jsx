@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Navigation from "../navigation";
+import Navigation from "../../navigation";
 
 const LayoutHeaderMain = ({ children }) => {
   return (
@@ -19,6 +19,7 @@ const Layout = styled.div`
   }
   background-color: ${({ theme }) => theme.colors.background};
   height: auto;
+  min-height: 100vh;
   width: 100vw;
   border: 1px solid black;
   display: flex;
