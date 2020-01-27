@@ -1,7 +1,5 @@
 # JC Golend
 
-# NOTES
-
 ## Setup
 
 1. Navigate to root folder yarn
@@ -18,3 +16,4 @@
 - I adapted the design as I saw fit for various screen sizes, but definitely needs more fine tuning and web designers input.
 - The build stole a lot of time as I don't do webpack often and had to work through things.
 - I used cloudinary to try provided optimized images, but I need to play around with the settings for various screen sizes, so for now I just set some basics.
+- I focused on optimization for the most part with route based bundle splitting, optimized bundles, using low quality image placeholders for all images except the logo, and loading the fonts asynchronously.
