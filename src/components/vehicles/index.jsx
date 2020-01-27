@@ -6,6 +6,7 @@ import { useFetchVehicles } from "./hooks";
 import Vehicle from "./components/vehicle";
 import VehiclePicture from "./components/vehiclePicture";
 import VehicleInfo from "./components/vehicleInfo";
+import VehiclePricing from "./components/vehiclePricing";
 
 const Vehicles = ({ sectionTitle, year, match, fetchUrl }) => {
   //Done so we can use this component without router if we want
@@ -26,7 +27,12 @@ const Vehicles = ({ sectionTitle, year, match, fetchUrl }) => {
               model={vehicle.model}
               series={vehicle.series}
               variant={vehicle.variant}
-            ></VehicleInfo>
+            >
+              <VehiclePricing
+                newPrice={vehicle.new_price}
+                from={vehicle.from}
+              ></VehiclePricing>
+            </VehicleInfo>
           </Vehicle>
         ))}
     </>

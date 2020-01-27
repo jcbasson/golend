@@ -4,11 +4,13 @@ import styled from "styled-components";
 const VehicleInfo = ({ year, model, series, variant, children }) => {
   return (
     <VehicleInfoContainer>
-      <VehicleFullModelDetails>
-        {year} {model} {series}
-      </VehicleFullModelDetails>
-      <VehicleDescription>{variant}</VehicleDescription>
-      <VehicleContentPlaceholder>{children}</VehicleContentPlaceholder>
+      <VehicleDescription>
+        <VehicleFullModelDetails>
+          {year} {model} {series}
+        </VehicleFullModelDetails>
+        <VehicleVariant>{variant}</VehicleVariant>
+      </VehicleDescription>
+      {children}
     </VehicleInfoContainer>
   );
 };
@@ -16,29 +18,33 @@ const VehicleInfo = ({ year, model, series, variant, children }) => {
 const VehicleInfoContainer = styled.div`
   display: flex;
   height: 100%;
-  width: 400px;
+  width: calc(100% - 200px);
   flex-direction: column;
-  align-item: center;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  @media (max-width: 425px) {
+    display: none;
+  }
+`;
+
+const VehicleDescription = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 `;
 
 const VehicleFullModelDetails = styled.span`
   font-weight: 1000;
   font-size: 14px;
-  line-height: 30px;
+  margin-bottom: 5px;
   color: ${({ theme }) => theme.colors.secondary};
   text-align: center;
 `;
 
-const VehicleDescription = styled.span`
+const VehicleVariant = styled.span`
   font-size: 10px;
   color: ${({ theme }) => theme.colors.secondary};
   text-align: center;
-`;
-
-const VehicleContentPlaceholder = styled.span`
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
 `;
 
 export default VehicleInfo;

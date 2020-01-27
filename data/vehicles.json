@@ -84,7 +84,7 @@
         "2020alphaRomeo": {
             "id": "2020alphaRomeo",
             "name": "alphaRomeo",
-            "model": "alphaRomeo",
+            "model": "Alpha Romeo",
             "series": "Sport",
             "variant": "Not ferrari series",
             "new_price": 850,
@@ -130,7 +130,8 @@
         },
         "2014alphaRomeo": {
             "id": "2014alphaRomeo",
-            "model": "alphaRomeo",
+            "name": "alphaRomeo",
+            "model": "Alpha Romeo",
             "series": "Sport",
             "variant": "Not ferrari series",
             "new_price": 850,

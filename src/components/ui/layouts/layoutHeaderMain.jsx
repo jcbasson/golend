@@ -21,7 +21,6 @@ const Layout = styled.div`
   height: auto;
   min-height: 100vh;
   width: 100vw;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +35,6 @@ const LayoutHeaderPlaceholder = styled.header`
 const LayoutMainContentPlaceHolder = styled.main`
   width: 81%;
   height: auto;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
 `;

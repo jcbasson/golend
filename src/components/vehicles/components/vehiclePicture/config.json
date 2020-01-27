@@ -1,6 +1,9 @@
 {
     "cdnUrl": "https://res.cloudinary.com/jccloudinary/image/upload",
-    "cdnVersion": "v1580093882",
-    "imageFolderPath": "/golend/vehicles",
+    "cdnVersion": {
+        "2020": "v1580093882",
+        "2014": "v1580124398"
+    },
+    "imageFolderPath": "golend/vehicles",
     "imageFormat": "jpg"
 }

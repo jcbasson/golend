@@ -1,6 +1,6 @@
 import React from "react";
 import Loadable from "react-loadable";
-import Loader from "../../components/Loader";
+import Loader from "../../components/loader";
 
 //TODO: Implement fail safe in case vehicles.json does not exist
 const LoadableVehicleYears = Loadable.Map({

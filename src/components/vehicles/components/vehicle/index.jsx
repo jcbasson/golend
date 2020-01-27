@@ -14,7 +14,7 @@ const VehicleContainer = styled.div`
   margin-bottom: 20px;
   padding: 20px;
   align-items: center;
-  @media (max-width: 375px) {
+  @media (max-width: 425px) {
     justify-content: center;
   }
 `;

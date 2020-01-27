@@ -7,7 +7,7 @@ const SectionTitle = ({ children }) => {
 
 const Title = styled.h1`
   font-size: 18px;
-  height: 150px;
+  height: 115px;
   line-height: 100px;
   width: 100%;
   color: ${({ theme }) => theme.colors.primary};
