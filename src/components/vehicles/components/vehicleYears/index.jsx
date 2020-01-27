@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { generateYearList } from "../../../../utils/dateTimeUtils";
 import { Link } from "react-router-dom";
-import SectionTitle from "../../../titles/sectionTitle";
+import SectionTitle from "../../../ui/titles/sectionTitle";
 
 const VehicleYears = ({
   startYear,

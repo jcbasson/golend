@@ -3,7 +3,7 @@ import { getRoutes } from "./configs/routeConfig";
 import userProfileConfig from "./configs/userProfile.json";
 import { BrowserRouter as Router } from "react-router-dom";
 import SwitchRoutes from "../../components/routes/switchRoutes";
-import LayoutHeaderMain from "../../components/layouts/layoutHeaderMain";
+import LayoutHeaderMain from "../../components/ui/layouts/layoutHeaderMain";
 import GolendTheme from "../../components/themes/golend";
 import UserProfilePic from "../../components/userProfile/components/userProfilePic";
 

@@ -2,6 +2,7 @@ import React from "react";
 import Loadable from "react-loadable";
 import Loader from "../../../components/Loader";
 
+//TODO: Implement fail safe in case vehicles.json does not exist
 const LoadableVehicleYears = Loadable.Map({
   loader: {
     VehicleYears: () =>
@@ -20,13 +21,22 @@ const LoadableVehicleYears = Loadable.Map({
   }
 });
 
-const LoadableVehicles = Loadable({
-  loader: () =>
-    import(
-      /* webpackChunkName: "vehicles" */ `../../../components/DynamicPage`
-    ),
+//TODO: Implement fail safe in case vehicles.json does not exist
+const LoadableVehicles = Loadable.Map({
+  loader: {
+    Vehicles: () =>
+      import(/* webpackChunkName: "vehicles" */ `../../../components/vehicles`),
+    config: () =>
+      import(/* webpackChunkName: "vehiclesConfig" */ `./vehicles.json`)
+  },
   loading: Loader,
-  delay: 300
+  delay: 300,
+  render(loaded) {
+    const Vehicles = loaded.Vehicles.default;
+    const props = loaded.config.vehicles.list;
+
+    return <Vehicles {...props} />;
+  }
 });
 
 export const getRoutes = () => [

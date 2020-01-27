@@ -1,5 +1,8 @@
 {
     "vehicles": {
+        "list": {
+            "sectionTitle": "Let's find your car"
+        },
         "years": {
             "startYear": "2020",
             "numberOfYearsCountBack": 10,
