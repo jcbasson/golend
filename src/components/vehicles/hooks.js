@@ -11,7 +11,7 @@ export const useFetchVehicles = (fetchUrl, year) => {
         setVehicles(vehicles);
       })
       .catch(err => console.log("send to error log", err));
-  }, [year]);
+  }, [year, fetchUrl]);
 
   return [vehicles];
 };

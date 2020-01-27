@@ -2,7 +2,9 @@
     "vehicles": {
         "list": {
             "sectionTitle": "Let's find your car",
-            "fetchUrl": "http://localhost:3000"
+            "fetchUrl": "http://localhost:3000",
+            "currency": "$",
+            "cdnUrl": "https://res.cloudinary.com/jccloudinary/image/upload"
         },
         "years": {
             "startYear": "2020",
