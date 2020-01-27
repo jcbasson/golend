@@ -18,7 +18,7 @@ const Layout = styled.div`
     font-family: ${({ theme }) => theme.fonts.primary} !important;
   }
   background-color: ${({ theme }) => theme.colors.background};
-  height: 100vh;
+  height: auto;
   width: 100vw;
   border: 1px solid black;
   display: flex;
@@ -34,7 +34,7 @@ const LayoutHeaderPlaceholder = styled.header`
 
 const LayoutMainContentPlaceHolder = styled.main`
   width: 81%;
-  height: 100%;
+  height: auto;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
